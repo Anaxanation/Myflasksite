@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request, flash, redirect, url_for, abort
 from flask_bootstrap import Bootstrap
 from math import ceil
-from gunicorn import *
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'your-secret-key-here'  # Замените на реальный ключ
