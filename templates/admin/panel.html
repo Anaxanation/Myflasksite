@@ -1,0 +1,30 @@
+{% extends "admin/base.html" %}
+
+{% block title %}Главная панель{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Главная панель</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-4 mb-4">
+        <div class="card text-white bg-primary">
+            <div class="card-body">
+                <h5 class="card-title">Товары</h5>
+                <p class="card-text">{{ products|length }} шт.</p>
+                <a href="{{ url_for('manage_products') }}" class="text-white">Управление</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4 mb-4">
+        <div class="card text-white bg-success">
+            <div class="card-body">
+                <h5 class="card-title">Быстрый доступ</h5>
+                <p class="card-text">Секретный URL: <code>{{ admin_path }}</code></p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

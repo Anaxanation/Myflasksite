@@ -1,0 +1,101 @@
+2025-07-09 15:40:05,209 - INFO -  * Restarting with stat
+2025-07-09 15:40:05,855 - WARNING -  * Debugger is active!
+2025-07-09 15:40:05,863 - INFO -  * Debugger PIN: 150-479-530
+2025-07-09 15:40:05,918 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-07-09 15:40:06,611 - WARNING -  * Debugger is active!
+2025-07-09 15:40:06,611 - INFO -  * Debugger PIN: 150-479-530
+2025-07-09 15:40:06,670 - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2025-07-09 15:40:06,670 - INFO -  * Running on http://192.168.31.117:5000/ (Press CTRL+C to quit)
+2025-07-09 15:40:40,003 - INFO -  * Restarting with stat
+2025-07-09 15:40:40,663 - WARNING -  * Debugger is active!
+2025-07-09 15:40:40,672 - INFO -  * Debugger PIN: 150-479-530
+2025-07-09 15:40:40,721 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-07-09 15:40:58,897 - INFO -  * Detected change in 'C:\\Users\\Dain_\\PycharmProjects\\myflasksite\\app.py', reloading
+2025-07-09 15:40:58,982 - INFO -  * Restarting with stat
+2025-07-09 15:40:59,695 - WARNING -  * Debugger is active!
+2025-07-09 15:40:59,699 - INFO -  * Debugger PIN: 150-479-530
+2025-07-09 15:40:59,757 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-07-09 15:41:05,484 - INFO - 127.0.0.1 - - [09/Jul/2025 15:41:05] "[33mGET / HTTP/1.1[0m" 404 -
+2025-07-09 15:41:13,437 - WARNING -  * Debugger is active!
+2025-07-09 15:41:13,437 - INFO -  * Debugger PIN: 150-479-530
+2025-07-09 15:41:13,495 - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2025-07-09 15:41:13,495 - INFO -  * Running on http://192.168.31.117:5000/ (Press CTRL+C to quit)
+2025-07-09 15:41:49,785 - INFO -  * Detected change in 'C:\\Users\\Dain_\\PycharmProjects\\myflasksite\\app.py', reloading
+2025-07-09 15:41:49,860 - INFO -  * Restarting with stat
+2025-07-09 15:41:50,524 - WARNING -  * Debugger is active!
+2025-07-09 15:41:50,528 - INFO -  * Debugger PIN: 150-479-530
+2025-07-09 15:41:50,567 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-07-09 15:43:46,350 - INFO -  * Restarting with stat
+2025-07-09 15:43:46,842 - WARNING -  * Debugger is active!
+2025-07-09 15:43:46,848 - INFO -  * Debugger PIN: 150-479-530
+2025-07-09 15:43:46,906 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-07-09 15:43:58,753 - INFO - 127.0.0.1 - - [09/Jul/2025 15:43:58] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-09 15:43:59,145 - INFO - 127.0.0.1 - - [09/Jul/2025 15:43:59] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-07-09 15:43:59,146 - INFO - 127.0.0.1 - - [09/Jul/2025 15:43:59] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-07-09 15:43:59,243 - INFO - 127.0.0.1 - - [09/Jul/2025 15:43:59] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-07-09 15:43:59,273 - INFO - 127.0.0.1 - - [09/Jul/2025 15:43:59] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2025-07-09 15:43:59,311 - INFO - 127.0.0.1 - - [09/Jul/2025 15:43:59] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-07-09 15:45:57,013 - INFO -  * Restarting with stat
+2025-07-09 15:45:57,497 - WARNING -  * Debugger is active!
+2025-07-09 15:45:57,501 - INFO -  * Debugger PIN: 150-479-530
+2025-07-09 15:45:57,549 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-07-09 15:46:06,128 - INFO - 127.0.0.1 - - [09/Jul/2025 15:46:06] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-09 15:46:06,500 - INFO - 127.0.0.1 - - [09/Jul/2025 15:46:06] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-07-09 15:46:06,501 - INFO - 127.0.0.1 - - [09/Jul/2025 15:46:06] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-07-09 15:46:06,523 - INFO - 127.0.0.1 - - [09/Jul/2025 15:46:06] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2025-07-09 15:46:06,527 - INFO - 127.0.0.1 - - [09/Jul/2025 15:46:06] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-07-09 15:46:06,548 - INFO - 127.0.0.1 - - [09/Jul/2025 15:46:06] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-07-09 15:47:15,990 - INFO -  * Restarting with stat
+2025-07-09 15:47:16,421 - WARNING -  * Debugger is active!
+2025-07-09 15:47:16,424 - INFO -  * Debugger PIN: 150-479-530
+2025-07-09 15:47:16,470 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-07-09 15:47:20,829 - INFO - 127.0.0.1 - - [09/Jul/2025 15:47:20] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-09 15:47:21,194 - INFO - 127.0.0.1 - - [09/Jul/2025 15:47:21] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-07-09 15:47:21,195 - INFO - 127.0.0.1 - - [09/Jul/2025 15:47:21] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-07-09 15:47:21,262 - INFO - 127.0.0.1 - - [09/Jul/2025 15:47:21] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-07-09 15:47:21,266 - INFO - 127.0.0.1 - - [09/Jul/2025 15:47:21] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2025-07-09 15:47:21,288 - INFO - 127.0.0.1 - - [09/Jul/2025 15:47:21] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-07-09 15:47:21,978 - INFO - 127.0.0.1 - - [09/Jul/2025 15:47:21] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-09 15:47:22,015 - INFO - 127.0.0.1 - - [09/Jul/2025 15:47:22] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-07-09 15:47:22,020 - INFO - 127.0.0.1 - - [09/Jul/2025 15:47:22] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-07-09 15:47:22,422 - INFO - 127.0.0.1 - - [09/Jul/2025 15:47:22] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-07-09 15:47:22,422 - INFO - 127.0.0.1 - - [09/Jul/2025 15:47:22] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2025-07-09 15:47:22,445 - INFO - 127.0.0.1 - - [09/Jul/2025 15:47:22] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-07-09 15:47:33,335 - INFO -  * Detected change in 'C:\\Users\\Dain_\\PycharmProjects\\myflasksite\\app.py', reloading
+2025-07-09 15:47:33,390 - INFO -  * Restarting with stat
+2025-07-09 15:47:34,021 - WARNING -  * Debugger is active!
+2025-07-09 15:47:34,026 - INFO -  * Debugger PIN: 150-479-530
+2025-07-09 15:47:34,078 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-07-09 15:52:08,587 - INFO -  * Restarting with stat
+2025-07-09 15:52:08,887 - WARNING -  * Debugger is active!
+2025-07-09 15:52:08,890 - INFO -  * Debugger PIN: 150-479-530
+2025-07-09 15:52:08,919 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-07-09 15:52:20,417 - INFO - 127.0.0.1 - - [09/Jul/2025 15:52:20] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-09 15:52:20,794 - INFO - 127.0.0.1 - - [09/Jul/2025 15:52:20] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-07-09 15:52:20,795 - INFO - 127.0.0.1 - - [09/Jul/2025 15:52:20] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-07-09 15:52:20,831 - INFO - 127.0.0.1 - - [09/Jul/2025 15:52:20] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2025-07-09 15:52:20,833 - INFO - 127.0.0.1 - - [09/Jul/2025 15:52:20] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-07-09 15:52:20,852 - INFO - 127.0.0.1 - - [09/Jul/2025 15:52:20] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-07-09 15:54:07,416 - INFO -  * Restarting with stat
+2025-07-09 15:54:07,420 - INFO -  * Detected change in 'C:\\Users\\Dain_\\PycharmProjects\\myflasksite\\test.py', reloading
+2025-07-09 15:54:07,446 - INFO -  * Restarting with stat
+2025-07-09 15:54:07,757 - WARNING -  * Debugger is active!
+2025-07-09 15:54:07,759 - INFO -  * Debugger PIN: 150-479-530
+2025-07-09 15:54:07,783 - WARNING -  * Debugger is active!
+2025-07-09 15:54:07,786 - INFO -  * Debugger PIN: 150-479-530
+2025-07-09 15:54:07,787 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-07-09 15:54:07,815 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-07-09 15:54:13,846 - INFO -  * Restarting with stat
+2025-07-09 15:54:14,144 - WARNING -  * Debugger is active!
+2025-07-09 15:54:14,147 - INFO -  * Debugger PIN: 150-479-530
+2025-07-09 15:54:14,173 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-07-09 15:54:21,300 - INFO - 127.0.0.1 - - [09/Jul/2025 15:54:21] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-09 15:54:21,612 - INFO - 127.0.0.1 - - [09/Jul/2025 15:54:21] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-07-09 15:54:21,612 - INFO - 127.0.0.1 - - [09/Jul/2025 15:54:21] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-07-09 15:54:21,631 - INFO - 127.0.0.1 - - [09/Jul/2025 15:54:21] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-07-09 15:54:21,632 - INFO - 127.0.0.1 - - [09/Jul/2025 15:54:21] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2025-07-09 15:54:21,652 - INFO - 127.0.0.1 - - [09/Jul/2025 15:54:21] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-07-09 15:55:24,414 - INFO -  * Detected change in 'C:\\Users\\Dain_\\PycharmProjects\\myflasksite\\app.py', reloading
+2025-07-09 15:55:24,447 - INFO -  * Restarting with stat
