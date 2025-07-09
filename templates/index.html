@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row align-items-center">
+    <div class="col-md-6">
+        <h1 class="display-4">Добро пожаловать на наш сайт!</h1>
+        <p class="lead">Качественные бьюти-боксы по маленькой цене.</p>
+        <a href="{{ url_for('contact') }}" class="btn btn-primary btn-lg">Связаться с нами по поводу доставки</a>
+    </div>
+    <div class="col-md-6">
+        <img src="https://via.placeholder.com/600x400" alt="Главное изображение" class="img-fluid rounded">
+    </div>
+</div>
+
+<div class="row mt-5">
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title"><i class="bi bi-speedometer2"></i> Быстро</h5>
+                <p class="card-text">Мы используем доставку через СДЕК, что обеспечивает качество и скорость.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title"><i class="bi bi-shield-check"></i> Надежно</h5>
+                <p class="card-text">Мы кладем только качественную косметику в бьюти-боксы.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title"><i class="bi bi-people"></i> Удобно</h5>
+                <p class="card-text">Не нужно каждый раз подбирать косметику самому.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
