@@ -4,31 +4,72 @@
 <div class="container my-5">
     <h1 class="text-center mb-5">Наши товары</h1>
     
+    <!-- Фильтр по категориям -->
+    <div class="mb-4">
+        <div class="btn-group" role="group">
+            <a href="{{ url_for('products_page') }}" class="btn btn-outline-secondary {% if not current_category %}active{% endif %}">
+                Все товары
+            </a>
+            <a href="{{ url_for('products_page') }}?category=small" class="btn btn-outline-secondary {% if current_category == 'small' %}active{% endif %}">
+                Мини
+            </a>
+            <a href="{{ url_for('products_page') }}?category=medium" class="btn btn-outline-secondary {% if current_category == 'medium' %}active{% endif %}">
+                Миди
+            </a>
+            <a href="{{ url_for('products_page') }}?category=large" class="btn btn-outline-secondary {% if current_category == 'large' %}active{% endif %}">
+                Макси
+            </a>
+        </div>
+    </div>
+
+    <!-- Список товаров -->
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         {% for product in products %}
         <div class="col">
             <div class="card h-100 shadow-sm">
+                <!-- Бейдж наличия -->
                 <div class="badge bg-{% if product.in_stock %}success{% else %}danger{% endif %} position-absolute" style="top: 0.5rem; right: 0.5rem;">
                     {% if product.in_stock %}В наличии{% else %}Нет в наличии{% endif %}
                 </div>
+
+                <!-- Изображение товара -->
                 <a href="{{ url_for('product_detail', product_id=product.id) }}">
-                    <img src="{{ product.image }}" class="card-img-top p-3" alt="{{ product.name }}">
+                    <img src="{{ product.image }}" class="card-img-top p-3" alt="{{ product.name }}" style="height: 200px; object-fit: contain;">
                 </a>
+
                 <div class="card-body">
+                    <!-- Название товара -->
                     <a href="{{ url_for('product_detail', product_id=product.id) }}" class="text-decoration-none text-dark">
                         <h5 class="card-title">{{ product.name }}</h5>
                     </a>
+
+                    <!-- Описание -->
                     <p class="card-text">{{ product.description }}</p>
                 </div>
+
                 <div class="card-footer bg-transparent">
                     <div class="d-flex justify-content-between align-items-center">
+                        <!-- Цена -->
                         <span class="h4">{{ product.price }} ₽</span>
-                        <button class="btn btn-primary {% if not product.in_stock %}disabled{% endif %}"
-                                {% if not product.in_stock %}aria-disabled="true"{% endif %}>
+
+                        <!-- Кнопка "В корзину" -->
+                        {% if product.in_stock %}
+                        <a href="{{ url_for('add_to_cart', product_id=product.id) }}" class="btn btn-primary">
                             В корзину
+                        </a>
+                        {% else %}
+                        <button class="btn btn-outline-secondary" disabled>
+                            Нет в наличии
                         </button>
+                        {% endif %}
                     </div>
                 </div>
+            </div>
+        </div>
+        {% else %}
+        <div class="col-12">
+            <div class="alert alert-info">
+                Товары не найдены
             </div>
         </div>
         {% endfor %}
@@ -40,7 +81,7 @@
         <ul class="pagination justify-content-center">
             {% if current_page > 1 %}
             <li class="page-item">
-                <a class="page-link" href="?page={{ current_page-1 }}" aria-label="Previous">
+                <a class="page-link" href="?page={{ current_page-1 }}{% if current_category %}&category={{ current_category }}{% endif %}" aria-label="Previous">
                     <span aria-hidden="true">&laquo;</span>
                 </a>
             </li>
@@ -48,13 +89,13 @@
 
             {% for page_num in range(1, total_pages+1) %}
             <li class="page-item {% if page_num == current_page %}active{% endif %}">
-                <a class="page-link" href="?page={{ page_num }}">{{ page_num }}</a>
+                <a class="page-link" href="?page={{ page_num }}{% if current_category %}&category={{ current_category }}{% endif %}">{{ page_num }}</a>
             </li>
             {% endfor %}
 
             {% if current_page < total_pages %}
             <li class="page-item">
-                <a class="page-link" href="?page={{ current_page+1 }}" aria-label="Next">
+                <a class="page-link" href="?page={{ current_page+1 }}{% if current_category %}&category={{ current_category }}{% endif %}" aria-label="Next">
                     <span aria-hidden="true">&raquo;</span>
                 </a>
             </li>
@@ -63,4 +104,35 @@
     </nav>
     {% endif %}
 </div>
+
+<style>
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .card-img-top {
+        background-color: #f8f9fa;
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover .card-img-top {
+        transform: scale(1.05);
+    }
+
+    .page-item.active .page-link {
+        background-color: #0d6efd;
+        border-color: #0d6efd;
+    }
+
+    .page-link {
+        color: #0d6efd;
+    }
+</style>
 {% endblock %}

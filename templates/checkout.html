@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="row">
+        <!-- Левая колонка - форма -->
+        <div class="col-md-8">
+            <h2 class="mb-4">Оформление заказа</h2>
+
+            <form method="POST" action="{{ url_for('checkout') }}">
+                <div class="mb-3">
+                    <label for="name" class="form-label">ФИО *</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="email" class="form-label">Email *</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="phone" class="form-label">Телефон *</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" required>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="address" class="form-label">Адрес доставки *</label>
+                    <textarea class="form-control" id="address" name="address" rows="3" required></textarea>
+                </div>
+
+                <div class="mb-4">
+                    <label for="comment" class="form-label">Комментарий к заказу</label>
+                    <textarea class="form-control" id="comment" name="comment" rows="2"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-lg">Подтвердить заказ</button>
+            </form>
+        </div>
+
+        <!-- Правая колонка - товары в корзине -->
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <div class="card-header bg-light">
+                    <h5 class="mb-0">Ваш заказ</h5>
+                </div>
+                <div class="card-body">
+                    {% for item in cart_items %}
+                    <div class="d-flex justify-content-between mb-2">
+                        <div>
+                            <strong>{{ item.product.name }}</strong>
+                            <div class="text-muted small">Количество: {{ item.quantity }}</div>
+                        </div>
+                        <div class="text-end">
+                            <div>{{ item.product.price }} ₽ × {{ item.quantity }}</div>
+                            <strong>{{ item.total }} ₽</strong>
+                        </div>
+                    </div>
+                    {% if not loop.last %}<hr class="my-2">{% endif %}
+                    {% endfor %}
+                </div>
+                <div class="card-footer bg-white">
+                    <div class="d-flex justify-content-between fw-bold fs-5">
+                        <span>Общая сумма:</span>
+                        <span>{{ total }} ₽</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        position: sticky;
+        top: 20px;
+    }
+</style>
+{% endblock %}

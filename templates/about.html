@@ -1,62 +1,56 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="row">
-    <div class="col-lg-8">
-        <h1 class="mb-4">О нашей компании</h1>
-        <p class="lead">Мы - команда профессионалов, создающая качественные веб-приложения на Flask.</p>
-        
-        <div class="mt-5">
+<div class="container my-5">
+    <h1 class="text-center mb-5">О нашей компании</h1>
+
+    <div class="row">
+        <div class="col-lg-6">
             <h3>Наша история</h3>
-            <p>Наша компания была основана в 2020 году с целью создания современных и удобных веб-приложений. За это время мы реализовали десятки успешных проектов для клиентов из различных отраслей.</p>
+            <p>Мы - команда профессионалов, создающая качественные веб-приложения с 2015 года.</p>
         </div>
-        
-        <div class="mt-5">
-            <h3>Наша команда</h3>
-            <div class="row mt-4">
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300x300" class="card-img-top" alt="Иван Иванов">
-                        <div class="card-body">
-                            <h5 class="card-title">Анна Зеленковская, Елизавета </h5>
-                            <p class="card-text">Главные разработчики</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300x300" class="card-img-top" alt="Петр Петров">
-                        <div class="card-body">
-                            <h5 class="card-title">Тевзадзе Давид</h5>
-                            <p class="card-text">Дизайнер</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300x300" class="card-img-top" alt="Сергей Сергеев">
-                        <div class="card-body">
-                            <h5 class="card-title">Александра Улина</h5>
-                            <p class="card-text">Менеджер проектов</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="col-lg-6">
+            <h3>Наши принципы</h3>
+            <ul>
+                <li>Качество превыше всего</li>
+                <li>Ориентация на клиента</li>
+                <li>Постоянное развитие</li>
+            </ul>
         </div>
     </div>
-    <div class="col-lg-4">
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Наши преимущества</h5>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> Опытная команда</li>
-                    <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> Современная косметика</li>
-                    <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> Индивидуальный подход</li>
-                    <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> Гибкие условия сотрудничества</li>
-                    <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> Поддержка после запуска</li>
-                </ul>
+
+    <h2 class="text-center mt-5 mb-4">Наша команда</h2>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-5 g-4">
+        {% for member in team %}
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="{{ member.photo }}" class="card-img-top" alt="{{ member.name }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ member.name }}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ member.position }}</h6>
+                    <p class="card-text">{{ member.bio }}</p>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="#" class="btn btn-outline-primary btn-sm">Контакты</a>
+                </div>
             </div>
         </div>
+        {% endfor %}
     </div>
 </div>
+
+<style>
+    .team-card {
+        transition: transform 0.3s;
+    }
+    .team-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .card-img-top {
+        height: 200px;
+        object-fit: cover;
+    }
+</style>
 {% endblock %}

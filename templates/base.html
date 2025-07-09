@@ -32,6 +32,16 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('products_page') }}">Товары</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('view_cart') }}">
+                            Корзина
+                            {% if 'cart' in session and session['cart'] %}
+                            <span class="badge bg-danger">
+                                {{ session['cart']|length }}
+                            </span>
+                            {% endif %}
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
